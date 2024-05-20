@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .boton1 {
+          background-image: url('https://i.pinimg.com/474x/7f/24/de/7f24deb73ff11503d041b8b33be18c6c.jpg');
+          background-size: cover;
+          color: white; /* Cambia el color del texto a blanco para que sea visible sobre la imagen */
+        }
+        .boton2 {
+          background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1x5Fe4nRZpp7c_uz8B6rtxdojl2wdGI9xSHnRta4arw&s');
+          background-size: cover;
+          color: white;
+        }
+        .boton3 {
+          background-image: url('https://img.freepik.com/foto-gratis/escena-fantasia-oscura_23-2151136076.jpg?size=626&ext=jpg&ga=GA1.1.672697106.1715040000&semt=ais');
+          background-size: cover;
+          color: rgb(255, 255, 255);
+        }
+        .boton4 {
+          background-image: url('https://img.freepik.com/foto-gratis/fondo-negro-engranajes_23-2149872528.jpg?size=626&ext=jpg&ga=GA1.1.1803636316.1707868800&semt=ais');
+          background-size: cover;
+          color: rgb(255, 255, 255);
+        }
+    </style>
+    <title>Amas el arte!!</title>
+    <script>
+        function navigateTo(option) {
+            if (option === 1) {
+                window.location.href = "moda.html";
+            } else if (option === 2) {
+                window.location.href = "grafico.html";
+            } else if (option === 3) {
+                window.location.href = "interiores.html";
+            } else if (option === 4) {
+                window.location.href = "industrial.html";
+            } else {
+                alert("Opción no válida.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>¿Qué tipo de arte te gusta más?</h1>
+    <button class="boton1" onclick="navigateTo(1)">Confeccion de ropa</button>
+    <button class="boton2" onclick="navigateTo(2)">Diseño grafico</button>
+    <button class="boton3" onclick="navigateTo(3)">Diseño de interiores</button>
+    <button class="boton4" onclick="navigateTo(4)">Diseño industrial</button>
+    <link rel="stylesheet" type="text/css" href="style3.css">
+
+</body>
+</html>

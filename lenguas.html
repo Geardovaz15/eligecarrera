@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .boton1 {
+          background-image: url('https://st2.depositphotos.com/1001877/5371/i/450/depositphotos_53712435-stock-photo-e-learning-learning-languages-online.jpg');
+          background-size: cover;
+          color: white; /* Cambia el color del texto a blanco para que sea visible sobre la imagen */
+        }
+        .boton2 {
+          background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQq04sl46KMpgGIjhk5z_KRfOCHLkpIZs4Zw&s');
+          background-size: cover;
+          color: white;
+        }
+        </style>
+    <title>Números</title>
+    <script>
+        function navigateTo(option) {
+            if (option === 1) {
+                window.location.href = "aprender.html";
+            } else if (option === 2) {
+                window.location.href = "viajar.html";
+            } else {
+                alert("Opción no válida.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Te gustan los idiomas</h1>
+    <h2>¿Qué prefieres?</h2>
+    <button class="boton1" onclick="navigateTo(1)">Quiero aprender</button>
+    <button class="boton2" onclick="navigateTo(2)">Me gustaria viajar por el mundo</button>
+    <link rel="stylesheet" type="text/css" href="style2.css">
+</body>
+</html>

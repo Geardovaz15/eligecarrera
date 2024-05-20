@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .boton1 {
+          background-image: url('https://st.depositphotos.com/1006542/4534/i/450/depositphotos_45347413-stock-photo-case-full-of-money-on.jpg');
+          background-size: cover;
+          color: white; /* Cambia el color del texto a blanco para que sea visible sobre la imagen */
+        }
+        .boton2 {
+          background-image: url('https://img.freepik.com/vector-gratis/fondo-elementos-marketing-estilo-hecho-mano_23-2147762050.jpg');
+          background-size: cover;
+          color: white;
+        }
+        .boton3 {
+          background-image: url('https://st2.depositphotos.com/1439888/11503/i/450/depositphotos_115032854-stock-photo-public-policy-concept-on-the.jpg');
+          background-size: cover;
+          color: rgb(255, 255, 255);
+        }
+    </style>
+    <title>Ayuda en la selección de carrera</title>
+    <script>
+        function navigateTo(option) {
+            if (option === 1) {
+                window.location.href = "negocios.html";
+            } else if (option === 2) {
+                window.location.href = "mercadotecnia.html";
+            } else if (option === 3) {
+                window.location.href = "organizacion.html";
+            } else {
+                alert("Opción no válida.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>¿Qué prefieres?</h1>
+    <button class="boton1" onclick="navigateTo(1)">Negocios</button>
+    <button class="boton2" onclick="navigateTo(2)">Mercadotecnia</button>
+    <button class="boton3" onclick="navigateTo(3)">Organizacion de negocios</button>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+
+</body>
+</html>

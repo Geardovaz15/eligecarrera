@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .boton1 {
+          background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsV40E9rMnIsz1Az3UcFam6WIpPr9O7YqrRpCCim2uyQ&s');
+          color: white; /* Cambia el color del texto a blanco para que sea visible sobre la imagen */
+        }
+        .boton2 {
+          background-image: url('https://img.freepik.com/fotos-premium/tablero-ajedrez-hombre-jugando-al-ajedrez_274326-1786.jpg');
+          background-size: cover;
+          color: white;
+        }
+        </style>
+    <title>Ciencias sociales</title>
+    <script>
+        function navigateTo(option) {
+            if (option === 1) {
+                window.location.href = "dere.html";
+            } else if (option === 2) {
+                window.location.href = "politologia.html";
+            }else {
+                alert("Opción no válida.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Ciencias sociales</h1>
+    <p>Entonces debes ir al CUCSH. ¿Qué te gusta más?</p>
+    <button class="boton1" onclick="navigateTo(1)">La justicia e igualdad</button>
+    <button class="boton2" onclick="navigateTo(2)">La gobernanza</button>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+</body>
+</html>

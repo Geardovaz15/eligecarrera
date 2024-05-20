@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .boton1 {
+          background-image: url('https://www.bbva.com/wp-content/uploads/2017/10/Bolsa.jpg');
+          color: white; /* Cambia el color del texto a blanco para que sea visible sobre la imagen */
+        }
+        .boton2 {
+          background-image: url('https://img.freepik.com/foto-gratis/vista-superior-escritorio-oficina-tabla-crecimiento-monedas_23-2148780621.jpg');
+          background-size: cover;
+          color: white;
+        }
+        </style>
+    <title>Ciencias sociales</title>
+    <script>
+        function navigateTo(option) {
+            if (option === 1) {
+                window.location.href = "economia.html";
+            } else if (option === 2) {
+                window.location.href = "contabilidad.html";
+            }else {
+                alert("Opción no válida.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Eres un gran fan de las finanzas!!!</h1>
+    <p>Entonces debes ir al CUCSH. ¿Qué te gusta más?</p>
+    <button class="boton1" onclick="navigateTo(1)">Economia</button>
+    <button class="boton2" onclick="navigateTo(2)">Contabilidad</button>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+</body>
+</html>

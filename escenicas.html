@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .boton1 {
+          background-image: url('https://img.freepik.com/fotos-premium/ola-audio-colorida-amplificador-espectro-audiovisual-fondo-negro_327278-1191.jpg?size=626&ext=jpg&ga=GA1.1.539837299.1711843200&semt=sph');
+          background-size: cover;
+          color: white; /* Cambia el color del texto a blanco para que sea visible sobre la imagen */
+        }
+        .boton2 {
+          background-image: url('https://i.pinimg.com/736x/5d/4a/01/5d4a016afcd137a11fc1a522a7d0b44e.jpg');
+          background-size: cover;
+          color: white;
+        }
+        .boton3 {
+          background-image: url('https://img.freepik.com/vector-premium/fondo-degradado-dia-mundial-musica_23-2149398844.jpg?size=626&ext=jpg&ga=GA1.1.1687694167.1714348800&semt=ais');
+          background-size: cover;
+          color: white;
+        }
+        </style>
+    <title>Números</title>
+    <script>
+        function navigateTo(option) {
+            if (option === 1) {
+                window.location.href = "artatak.html";
+            } else if (option === 2) {
+                window.location.href = "danza.html";
+            } else if (option === 3) {
+                window.location.href = "musica.html";
+            } else {
+                alert("Opción no válida.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Te gustan las artes excenicas, muy bien!!!</h1>
+    <h2>¿Qué prefieres?</h2>
+    <button class="boton1" onclick="navigateTo(1)">Arte audiovisual</button>
+    <button class="boton2" onclick="navigateTo(2)">Danza</button>
+    <button class="boton3" onclick="navigateTo(3)">Musica</button>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+</body>
+</html>

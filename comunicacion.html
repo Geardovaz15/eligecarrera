@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .boton1 {
+          background-image: url('https://gequiltdesigns.com/cdn/shop/products/JT-CD1681-BLACK.jpg?v=1665084672');
+          background-size: cover;
+          color: white; /* Cambia el color del texto a blanco para que sea visible sobre la imagen */
+        }
+        .boton2 {
+          background-image: url('https://s1.significados.com/foto/idioma-og.jpg');
+          background-size: cover;
+          color: white;
+        }
+        .boton3 {
+          background-image: url('https://thumbs.dreamstime.com/b/vector-de-l%C3%ADnea-gui%C3%B3n-del-d%C3%ADa-profesor-feliz-en-un-fondo-negro-amo-al-el-coraz%C3%B3n-por-197458160.jpg');
+          background-size: cover;
+          color: white;
+        }
+        </style>
+    <title>Comunicacion</title>
+    <script>
+        function navigateTo(option) {
+            if (option === 1) {
+                window.location.href = "periodismo.html";
+            } else if (option === 2) {
+                window.location.href = "idiomas.html";
+            } else if (option === 3) {
+                window.location.href = "ensenanza.html";
+            } else {
+                alert("Opción no válida.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Ciencias sociales</h1>
+    <h2>¿Enfocado a que?</h2>
+    <button class="boton1" onclick="navigateTo(1)">Periodismo</button>
+    <button class="boton2" onclick="navigateTo(2)">Idiomas</button>
+    <button class="boton3" onclick="navigateTo(3)">Enseñanza</button>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+</body>
+</html>

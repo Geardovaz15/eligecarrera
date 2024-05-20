@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .boton1 {
+          background-image: url('https://images.ecestaticos.com/OhXjBzK7RIiXib37W0wqI_l4oBQ=/0x64:1252x769/1200x675/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2Fb45%2F161%2F2b4%2Fb451612b46782078431528832573321f.jpg');
+          background-size: cover;
+          color: white; /* Cambia el color del texto a blanco para que sea visible sobre la imagen */
+        }
+        .boton2 {
+          background-image: url('https://plustatic.com/4085/conversions/ramas-geografia-large.jpg');
+          background-size: cover;
+          color: white;
+        }
+        </style>
+    <title>Números</title>
+    <script>
+        function navigateTo(option) {
+            if (option === 1) {
+                window.location.href = "historia.html";
+            } else if (option === 2) {
+                window.location.href = "geografia.html";
+            } else {
+                alert("Opción no válida.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Te gustan saber sobre el mundo</h1>
+    <h2>¿Qué prefieres?</h2>
+    <button class="boton1" onclick="navigateTo(1)">La Historia</button>
+    <button class="boton2" onclick="navigateTo(2)">La Geografia</button>
+    <link rel="stylesheet" type="text/css" href="style2.css">
+</body>
+</html>

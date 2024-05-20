@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .boton1 {
+          background-image: url('https://thumbs.dreamstime.com/z/icono-de-sintaxis-lenguaje-programaci%C3%B3n-l%C3%ADnea-patr%C3%B3n-aislado-sin-interrupciones-en-fondo-negro-sistema-archivos-vector-268773977.jpg');
+          background-size: cover;
+          color: white; /* Cambia el color del texto a blanco para que sea visible sobre la imagen */
+        }
+        .boton2 {
+          background-image: url('https://l450v.alamy.com/450ves/2apndke/cg-de-la-figura-del-corazon-rojo-que-se-extiende-rojo-y-blanco-palabras-amor-en-diferentes-idiomas-sobre-fondo-negro-2apndke.jpg');
+          background-size: cover;
+          color: white;
+        }
+        </style>
+    <title>Números</title>
+    <script>
+        function navigateTo(option) {
+            if (option === 1) {
+                window.location.href = "sintaxis.html";
+            } else if (option === 2) {
+                window.location.href = "lenguas.html";
+            } else {
+                alert("Opción no válida.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Te gustan los idiomas</h1>
+    <h2>¿Qué prefieres?</h2>
+    <button class="boton1" onclick="navigateTo(1)">Sintaxis</button>
+    <button class="boton2" onclick="navigateTo(2)">Lenguas</button>
+    <link rel="stylesheet" type="text/css" href="style2.css">
+</body>
+</html>

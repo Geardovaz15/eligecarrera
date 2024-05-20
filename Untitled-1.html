@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ayuda en la selección de carrera</title>
+    <script>
+        function preguntar(msg) {
+            return parseInt(prompt(msg));
+        }
+
+        function mostrar(msg) {
+            alert(msg);
+        }
+
+        function main() {
+            let opc1;
+
+            mostrar("Proyecto: ayuda en la selección de carrera");
+            opc1 = preguntar("¿Qué te gusta más?\n1: Lo exacto y comprobable\n2: Lo debatible y filosófico\n3: Lo administrativo y lo económico");
+
+            switch (opc1) {
+                case 1:
+                    opc1 = preguntar("¿Qué te gusta más?\n1: Las ciencias exactas\n2: Ciencias de la salud");
+
+                    switch (opc1) {
+                        case 1:
+                            opc1 = preguntar("¿Qué te gusta más?\n1: Las ciencias básicas\n2: Las ingenierías");
+
+                            switch (opc1) {
+                                case 1:
+                                    opc1 = preguntar("¿Qué prefieres?\n1: Me gusta más la química\n2: Me gustan más los números");
+
+                                    switch (opc1) {
+                                        case 1:
+                                            mostrar("Te recomendamos: Química, Química Farmacéutica Biológica, Ing. en Alimentos");
+                                            break;
+                                        case 2:
+                                            opc1 = preguntar("¿Qué prefieres?\n1: La física\n2: Las matemáticas");
+
+                                            switch (opc1) {
+                                                case 1:
+                                                    mostrar("Te recomendamos: Física");
+                                                    break;
+                                                case 2:
+                                                    mostrar("Te recomendamos: Matemáticas");
+                                                    break;
+                                                default:
+                                                    mostrar("Opción no válida.");
+                                                    break;
+                                            }
+                                            break;
+                                        default:
+                                            mostrar("Opción no válida.");
+                                            break;
+                                    }
+                                    break;
+                                case 2:
+                                    opc1 = preguntar("Elige\n1: Me gustan las computadoras\n2: No me gustan las computadoras");
+
+                                    switch (opc1) {
+                                        case 1:
+                                            mostrar("Te recomendamos una de las siguientes ingenierías: Ingeniería Informática, Ingeniería en Computación, Ingeniería en Comunicaciones y Electrónica, Ingeniería Robótica");
+                                            break;
+                                        case 2:
+                                            mostrar("Te recomendamos una de las siguientes ingenierías: Ingeniería en Logística y Transporte, Ingeniería Civil, Ingeniería Industrial");
+                                            break;
+                                        default:
+                                            mostrar("Opción no válida.");
+                                            break;
+                                    }
+                                    break;
+                                default:
+                                    mostrar("Opción no válida.");
+                                    break;
+                            }
+                            break;
+                        case 2:
+                            mostrar("Te recomendamos estudiar Medicina");
+                            break;
+                        default:
+                            mostrar("Opción no válida.");
+                            break;
+                    }
+                    break;
+
+                case 2:
+                    opc1 = preguntar("¿Qué te gusta más?\n1: Las ciencias sociales\n2: El arte");
+
+                    switch (opc1) {
+                        case 1:
+                            mostrar("Entonces debes ir al CUCSH");
+                            opc1 = preguntar("¿Qué te gusta más?\n1: El derecho\n2: La comunicación");
+
+                            switch (opc1) {
+                                case 1:
+                                    mostrar("Te recomendamos estudiar Derecho");
+                                    break;
+                                case 2:
+                                    mostrar("Te recomendamos estudiar Comunicación");
+                                    break;
+                                default:
+                                    mostrar("Opción no válida.");
+                                    break;
+                            }
+                            break;
+
+                        case 2:
+                            mostrar("Debes ir a CUAAD");
+                            opc1 = preguntar("¿Qué te gusta más?\n1: Las artes escénicas\n2: La creatividad");
+
+                            switch (opc1) {
+                                case 1:
+                                    mostrar("Te recomendamos estudiar:\nLicenciatura en Artes Audiovisuales, Artes Escénicas para la Expresión Dancística, Artes Escénicas para la Expresión Teatral, Artes Visuales para la Expresión Fotográfica, Artes Visuales para la Expresión Plástica, Música");
+                                    break;
+                                case 2:
+                                    mostrar("Te recomendamos estudiar:\nLicenciatura en Diseño de Interiores y Ambientación, Diseño de Modas, Diseño Industrial, Diseño para la Comunicación Gráfica, Diseño, Arte y Tecnologías Interactivas");
+                                    break;
+                                default:
+                                    mostrar("Opción no válida.");
+                                    break;
+                            }
+                            break;
+
+                        default:
+                            mostrar("Opción no válida.");
+                            break;
+                    }
+                    break;
+
+                case 3:
+                    mostrar("Te recomendamos CUCEA");
+                    opc1 = preguntar("¿Qué te gusta más?\n1: Me gusta la economía y finanzas\n2: Me gusta lo administrativo-mercantil");
+
+                    switch (opc1) {
+                        case 1:
+                            mostrar("Te recomendamos estudiar: Administración Gubernamental y Políticas Públicas, Contaduría Pública, Economía, Gestión y Economía Ambiental, Tecnologías de la Información, Turismo");
+                            break;
+                        case 2:
+                            opc1 = preguntar("¿Qué prefieres?\n1: Administración y gestión\n2: Mercadeo");
+
+                            switch (opc1) {
+                                case 1:
+                                    mostrar("Te recomendamos estudiar: Administración, Administración Financiera y Sistemas, Gestión de Negocios Gastronómicos");
+                                    break;
+                                case 2:
+                                    mostrar("Te recomendamos estudiar: Negocios, Negocios Internacionales, Mercadotecnia, Recursos Humanos, Relaciones Públicas y Comunicación, Administración Gubernamental y Políticas Públicas");
+                                    break;
+                                default:
+                                    mostrar("Opción no válida.");
+                                    break;
+                            }
+                            break;
+                        default:
+                            mostrar("Opción no válida.");
+                            break;
+                    }
+                    break;
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Ayuda en la selección de carrera</h1>
+    <button onclick="main()">Iniciar</button>
+</body>
+</html>

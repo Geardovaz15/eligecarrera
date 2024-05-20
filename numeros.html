@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .boton1 {
+          background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQajmyrgegRDw5-0VhpcAeZhVHTggBWuUP6QnCBTQLWzbuaZpyTSnM7h_-ChcjSbG47X6A&usqp=CAU');
+          background-size: cover;
+          color: white; /* Cambia el color del texto a blanco para que sea visible sobre la imagen */
+        }
+        .boton2 {
+          background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb6DoKIeonU1EcKiqVWnm68vJyumes7KiFoA&s');
+          background-size: cover;
+          color: white;
+        }
+        </style>
+    <title>Números</title>
+    <script>
+        function navigateTo(option) {
+            if (option === 1) {
+                window.location.href = "fisi.html";
+            } else if (option === 2) {
+                window.location.href = "mate.html";
+            } else {
+                alert("Opción no válida.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Te gustan los numeros</h1>
+    <h2>¿Qué prefieres?</h2>
+    <button class="boton1" onclick="navigateTo(1)">La física</button>
+    <button class="boton2" onclick="navigateTo(2)">Las matemáticas</button>
+    <link rel="stylesheet" type="text/css" href="style2.css">
+</body>
+</html>

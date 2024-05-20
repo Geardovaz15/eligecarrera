@@ -1,0 +1,58 @@
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+body {
+    background-color: #f0f0f0;
+    font-family: 'Helvetica Neue', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('https://www.fiftysounds.com/images/graphics/white-low-poly-background-338.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    animation: fadeIn 1s;
+}
+
+p {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 50px;
+    animation: fadeIn 2s;
+}
+
+a {
+    display: block;
+    width: 200px;
+    height: 50px;
+    margin: 20px auto;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    padding: 15px 0;
+    text-decoration: none;
+    animation: fadeIn 3s;
+}
+
+a:hover {
+    background-color: #45a049;
+}

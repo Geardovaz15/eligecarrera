@@ -1,0 +1,267 @@
+/* Generales (afectan a todos los objetos) */
+body{
+  box-sizing: border-box;
+  font-family: sans-serif;
+  margin: 0;
+}
+
+ul {
+  list-style-position: inside;
+}
+.bodyndex{
+  margin: 0;
+  min-height: 100vh;
+  background-image: url(Explanada_dv.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment:fixed;
+}
+
+.bodyndex:before{
+  content: "";
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-attachment: fixed;
+
+  background: linear-gradient(45deg,#ddd,#8a9198);
+  
+  opacity: 0.6;
+  z-index: -1;
+}
+
+body:preguntas1:before {
+  content: "¿Qué te gusta más?";
+  font-size: 2em;
+  display: block;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+body:preguntas1:after {
+  content: "Lo exacto y comprobable Lo debatible y filosófico Lo administrativo y lo económico";
+  font-size: 1.2em;
+  display: flex;
+  justify-content: space-around;
+  padding: 1em;
+  background-color: #4CAF50; /* Green */
+  color: white;
+  cursor: pointer;
+}
+
+
+.bodyarte{
+  margin: 0;
+  min-height: 100vh;
+  background-image: url(CUAD.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment:fixed;
+}
+
+.bodyCuad:before{
+  content: "";
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-attachment: fixed;
+
+  background: linear-gradient(45deg,#ddd,#8a9198);
+  
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.bodyCucea{
+  margin: 0;
+  min-height: 100vh;
+  background-image: url(CUCEA.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment:fixed;
+}
+
+.bodyCucea:before{
+  content: "";
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-attachment: fixed;
+
+  background: linear-gradient(45deg,#ddd,#8a9198);
+  
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.bodyCucsh{
+  margin: 0;
+  min-height: 100vh;
+  background-image: url(CUCSH.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment:fixed;
+}
+
+.bodyCucsh:before{
+  content: "";
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-attachment: fixed;
+
+  background: linear-gradient(45deg,#ddd,#8a9198);
+  
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.bodyCucs{
+  margin: 0;
+  min-height: 100vh;
+  background-image: url(CUCS.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment:fixed;
+}
+
+.bodyCucs:before{
+  content: "";
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-attachment: fixed;
+
+  background: linear-gradient(45deg,#ddd,#8a9198);
+  
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.bodyCucei{
+  margin: 0;
+  min-height: 100vh;
+  background-image: url(CUCEI.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment:fixed;
+}
+
+.bodyCucei:before{
+  content: "";
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-attachment: fixed;
+
+  background: linear-gradient(45deg,#ddd,#8a9198);
+  
+  opacity: 0.6;
+  z-index: -1;
+}
+
+
+header{
+  text-align:center;
+  min-height: 80px;
+  background: #2a3947;
+  color:#ffffff;
+  padding: 20px;
+}
+
+label{
+  display:block;
+  padding:7px;
+  border-radius:7px;
+  cursor:pointer;
+}
+
+section{
+  border: 2px solid #648ca4;
+  border-radius: 3px;
+  padding:10px;
+  margin: 20px;
+  background-color: #eae9ef;
+  text-align:center;
+  color: #293a52;
+  display:0;
+}
+
+/* Espesificos (afectan a solo algunos obetos para hacer que se vean mejor) */
+.my-button {
+  width: 100%;
+  display: block;
+  margin-bottom: 5px;
+  background-color: #4CAF50;
+  border: none; 
+  color: white;
+  font-size:35px;
+  padding: 40px 35px; 
+  cursor: pointer; 
+  border-radius: 5px; 
+}
+
+.my-button:hover {
+  background-color: #46a049;
+}
+
+.my-button:active {
+  background-color: #04AA6D;
+}
+
+.container{
+  max-width:flex;
+  margin:auto;
+  padding: 20px;
+  background-color:#ddd;
+}
+
+.introduccion{
+  border: 2px solid #648ca4;
+  border-radius: 3px;
+  padding:10px;
+  margin: 20px;
+  background-color: #eae9ef;
+  text-align:center;
+  color: #293a52;
+  display:0;
+}
+
+.titulo{
+  font-size:35px;
+}
+
+.cuerpo{
+  color:#8a9198;
+  font-size:20px;
+}
+
+.primary {background-color: #007bff;} 
+.primary:hover {background: #0b8dda;}
+
+.warning {background-color: #ff9800;} 
+.warning:hover {background: #e68a00;}
+
+.btn {
+  border: none; 
+  color: white; 
+  padding: 14px 28px; 
+  cursor: pointer; 
+  border-radius: 5px; 
+  margin: 20px
+
+}
+
+
